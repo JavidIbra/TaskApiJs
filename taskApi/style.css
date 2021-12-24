@@ -1,8 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
 }
-h1{
+h1 {
+  color: rgb(25, 88, 25);
   font-style: italic;
+  font-style: bold;
+  font-size: 50px;
+}
+p {
+  font-size: 25px;
+  color: rgba(51, 45, 143, 0.801);
+  font-style: bold;
 }

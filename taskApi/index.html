@@ -1,80 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mukta:wght@200&family=Pushster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
-    <h1>It's Time to Pray</h1>
-
-    <div class="container mt-5 ">
-
-        <div class="row">
-            <div class="col-md-3">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control lat" placeholder="Latitude">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control long" placeholder="Longtitude">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="input-group mb-3" data-provide="datepicker">
-                    <input type="month" class="form-control month" placeholder="Month">
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="input-group mb-3">
-                    <input type="year" class="form-control year" placeholder="Year">
-                </div>
-            </div>
+  <body>
+    <div class="container mt-5 img">
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <h1>It's Time to Pray</h1>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-md-3">
-                <button class="btn btn-success btn1 mb-5" type="button">Get Pray Time</button>
-            </div>
-        </div>
+      </div>
 
-        <div class="row wrapper">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Day</th>
-                        <th scope="col">Fajr</th>
-                        <th scope="col">Sunrise</th>
-                        <th scope="col">Dhuhr</th>
-                        <th scope="col">Asr</th>
-                        <th scope="col">Maghrib</th>
-                        <th scope="col">Isha </th>
-                    </tr>
-                </thead>
-                <!-- <tbody>
-                    <tr>
-                        <th>1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                </tbody> -->
-            </table>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="input-group mb-4">
+            <input
+              type="text"
+              class="form-control lat"
+              placeholder="Latitude"
+            />
+          </div>
         </div>
+        <div class="col-md-3">
+          <div class="input-group mb-4">
+            <input
+              type="text"
+              class="form-control long"
+              placeholder="Longtitude"
+            />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="input-group mb-3" data-provide="datepicker">
+            <input
+              type="month"
+              class="form-control month"
+              placeholder="Month"
+            />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="input-group mb-3">
+            <input type="date" class="form-control year" placeholder="Year" />
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <button class="btn btn-success btn1 mb-5" type="button">
+            Get Pray Time
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mb-3">
+          <p class="city"></p>
+        </div>
+      </div>
 
+      <div class="row wrapper">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Fajr</th>
+              <th scope="col">Sunrise</th>
+              <th scope="col">Dhuhr</th>
+              <th scope="col">Asr</th>
+              <th scope="col">Maghrib</th>
+              <th scope="col">Sunset</th>
+              <th scope="col">Isha</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
     </div>
 
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
